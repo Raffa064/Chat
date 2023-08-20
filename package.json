@@ -4,8 +4,8 @@
   "description": "A chat application",
   "main": "server.js",
   "scripts": {
-    "start": "node .",
-    "test": "nodemon"
+    "start": "node server.js",
+    "test": "nodemon server.js"
   },
   "keywords": [
     "chat"
