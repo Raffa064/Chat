@@ -11,7 +11,7 @@ The mock option is suitable for testing the project without the need to launch a
 
 > I hardly recommend not deploying **mock** to production!
 
-At this moment, the project has no deployed version, but you can deploy locally with only few steps, that I describe on the next section.  
+At this moment, the project has no deployed version, but you can deploy locally with only few steps, that I describe on the next section.
 
 ## How to run locally
 
@@ -34,3 +34,7 @@ Or, if you want to do tests (nodemon):
 ```
 
 > You can replace "mysql" to mock if you haven't a database.<br>**Mock is only for tests!**
+
+Now, if are all right, you can acess the chat in [https://localhost:5000](https://localhost:5000)
+
+> The server port can be changed by setting "PORT" eviroment variable before run
