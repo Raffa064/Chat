@@ -1,0 +1,19 @@
+POST http://localhost:5000/create-account
+content-type: application/json
+
+{ 
+  "nick": "Raffa064"
+}
+###
+
+GET http://localhost:5000/messages
+###
+
+POST http://localhost:5000/messages
+content-type: application/json
+
+{
+  "accountId": "<your TEST id>",
+  "content": "Hello"
+}
+###

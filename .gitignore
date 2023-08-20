@@ -1,0 +1,5 @@
+*.env
+.setup
+node_modules
+notes.txt
+mock-data

@@ -1,0 +1,115 @@
+:root {
+  --background-color-1: #141414;
+  --background-color-2: #292929;
+  --foreground-color-1: #e0e0e0;
+  --foreground-color-2: #a9a9a9;
+  --accent-color-1: #66b14c;
+  --accent-color-2: #40a850;
+  --accent-color-3: #7d4cb1;
+  --accent-color-4: #8c40a8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color-1);
+}
+
+.message-list {
+  flex: 1;
+  padding: 10px;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+.message {
+  width: fit-content;
+  min-width: 20%;
+  max-width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: var(--background-color-2);
+  border-radius: 4px;
+}
+
+.message.user {
+  margin-left: auto;
+  background: var(--accent-color-1);
+}
+
+.message .content {
+  color: var(--foreground-color-2);
+}
+
+.message.user .content {
+  color: var(--background-color-1);
+}
+
+.message .nick {
+  font-size: .9rem;
+  font-weight: bold;
+  color: var(--accent-color-1)
+}
+
+.message.user .nick {
+  color: var(--accent-color-3);
+}
+
+.input-bar {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-input {
+  width: 60%;
+  height: 40px;
+  padding: 10px;
+  background: var(--background-color-2);
+  color: var(--foreground-color-2);
+  caret-color: var(--accent-color-1);
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.message-input::placeholder {
+  font-style: italic;
+}
+
+.message-input:hover, .message-input:focus {
+  outline: 2px solid var(--accent-color-1);
+  box-shadow: 0px 1px 5px var(--accent-color-1);
+}
+
+.message-send {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin-left: 10px;
+  background: var(--background-color-2);
+  color: var(--foreground-color-2);
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.message-send:hover {
+  background: linear-gradient(var(--accent-color-1), var(--accent-color-2));
+  color: var(--background-color-1);
+}
