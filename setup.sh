@@ -52,3 +52,9 @@ echo ".setup" >> ".gitignore"
 touch "./.setup"
 
 echo "Setup finished!"
+
+echo
+echo "Use one of the following commands to run:"
+echo "npm start -- <mode> # only run"
+echo "npm test -- <mode> # run with nodemon"
+echo "mode = mysql | mock"
