@@ -17,3 +17,6 @@ content-type: application/json
   "content": "Hello"
 }
 ###
+
+GET http://localhost:5000/messages
+###
